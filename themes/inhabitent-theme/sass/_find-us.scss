@@ -1,0 +1,32 @@
+.page-id-49 {
+  .site-content {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    height: 100%;
+    padding-top: 100px;
+  }
+  .content-area {
+    width: 80%;
+  }
+  .widget-area {
+    width: 20%;
+  }
+}
+
+.widget-area {
+  border-left: 1px solid #e1e1e1;
+  padding-left: 70px;
+
+  ul {
+    padding-left: 0px;
+    margin: 0;
+    li {
+      a {
+        text-decoration: none;
+        color: #248a83;
+      }
+    }
+  }
+}

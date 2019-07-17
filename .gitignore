@@ -32,7 +32,7 @@ ehthumbs.db
 !README.md 
 
 plugins/*
-!plugins/inhabitent-functionality
+!plugins/red-functionality-master
 
 themes/*
 !themes/inhabitent-theme/

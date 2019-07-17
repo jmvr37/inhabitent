@@ -21,15 +21,30 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+				<div class='container'>
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<div class='logo'>
+				<a href="http://localhost:8888/inhabitent/" rel="home">
+					<h1 class="site-title">Inhabitent</h1>
+					</a>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					
+				</div>
 				</div><!-- .site-branding -->
-
+				</div>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
+			<!-- <?php 
+			if ( has_post_thumbnail() ) {
+			the_post_thumbnail();
+			}  ?> -->
+
+
 			<div id="content" class="site-content">
+
+			<!-- <img src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent.svg" alt="inhabitent logo">					
+				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->

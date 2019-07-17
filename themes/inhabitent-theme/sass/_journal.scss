@@ -1,0 +1,69 @@
+.blog {
+  .site-content {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    height: 100%;
+    padding-top: 100px;
+  }
+
+  .entry-header {
+    position: relative;
+    line-height: 0;
+  }
+
+  .journal-title {
+    background-color: #248a83;
+    max-width: 75%;
+    font-size: 2.3rem;
+    position: absolute;
+    left: 0;
+    padding: 0.75rem 1.5rem;
+    margin-top: 2.25rem;
+    top: 0px;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .entry-meta {
+    position: absolute;
+    color: white;
+    background-color: blue($color: #000000);
+    text-transform: uppercase;
+    bottom: 10px;
+    left: 300px;
+    text-decoration: none;
+  }
+
+  .attachment-large {
+    width: 770px;
+    height: auto;
+  }
+  .entry-content {
+    margin: 0.5rem 0;
+    p {
+      margin-left: 10px;
+      margin-right: 114px;
+      text-align: initial;
+    }
+  }
+  .widget-area {
+    border-left: 1px solid #e1e1e1;
+    padding-left: 70px;
+
+    ul {
+      padding-left: 0px;
+      margin: 0;
+      li {
+        a {
+          text-decoration: none;
+          color: #248a83;
+        }
+      }
+    }
+  }
+}

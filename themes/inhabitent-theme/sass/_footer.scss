@@ -1,0 +1,53 @@
+.site-info {
+  display: flex;
+  margin-left: 90px;
+  margin-top: 40px;
+}
+
+.days {
+  font-size: 1.2rem;
+}
+
+h3 {
+  color: #d99054;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+.contact {
+  padding-left: 20px;
+  padding-right: 70px;
+  width: 25%;
+}
+
+.hours {
+  padding-left: 20px;
+  padding-right: 70px;
+  width: 25%;
+}
+.logo-footer {
+  text-decoration: none;
+  width: 300px;
+  overflow: hidden;
+  width: 50%;
+  padding-top: 40px;
+  padding-left: 200px;
+
+  img {
+    max-width: 74%;
+  }
+}
+.site-footer {
+  color: white;
+  padding: 1rem;
+  background-image: url('/inhabitent/wp-content/themes/inhabitent-theme/images/dark-wood.png');
+  // background-color: black;
+  height: 350px;
+  .container {
+    margin-left: 600px;
+    margin-top: 20px;
+  }
+  .footer2 {
+    text-transform: uppercase;
+  }
+}
