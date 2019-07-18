@@ -10,12 +10,19 @@ get_header(); ?>
 <!-- /* taxonomie query */ -->
 
 <?php
-$taxonomies = get_taxonomies();
+$taxonomies = get_terms( array(
+   'taxonomy' => 'product_type',
+   'hide_empty' => false,
+) );
 if ( ! empty( $taxonomies ) ) : ?>
     <ul>
         <?php
         foreach ( $taxonomies as $taxonomy ) {
-            echo '<li>' . $taxonomy . '</li>';
+         //   echo print_r( $taxonomy );
+
+         echo '<li><a href="'.get_term_link($taxonomy->slug, 'product_type').'">'.$taxonomy->name.'</a></li>';
+
+            // echo '<li>' . $taxonomy->name . '</li>'; /* wrap this whit an a tag with the link use another wp function */
         }
         ?>
     </ul>
@@ -36,7 +43,7 @@ $query = new WP_Query( $args ); ?>
 
       <div class='gridcontainer'>
          <div class='postgrid'>
-         <div class='pimg'><img src="<?php echo CFS()->get( 'featured_image' ); ?>" /> </div>
+         <div class='pimg'><a href="<?php echo get_permalink()?>"><img src="<?php echo CFS()->get( 'featured_image' ); ?>" /></a> </div>
          <div class='Product-type'>
          <h1 class='ptitle'><?php the_title(); ?></h1>
          <span class='pprice'><?php echo CFS()->get( 'price' ); ?></span>

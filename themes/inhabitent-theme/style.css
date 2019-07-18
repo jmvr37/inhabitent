@@ -845,7 +845,7 @@ h3 {
       color: #248a83; }
 
 .home-page .site-content {
-  width: 1420px;
+  width: 100%;
   padding-top: 0; }
 
 .home-page .logo-front {
@@ -855,7 +855,7 @@ h3 {
   width: 300px; }
 
 .home-page img {
-  width: 1420px; }
+  width: 100%; }
 
 .archive .gridwrapper {
   display: grid;

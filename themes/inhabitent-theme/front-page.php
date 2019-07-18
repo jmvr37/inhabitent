@@ -23,41 +23,38 @@ get_header(); ?>
 	
 <?php the_content(); ?>
 
+
+<div class='heroimg'>
 <?php 
 if ( has_post_thumbnail() ) {
 the_post_thumbnail();
 }  ?>
+</div>
 
 
+<ul>
 
 <?php $args = array(
    'order' => 'ASC',
    'posts_per_page' => 3,
    'post_type' => array('post'),
-   
-//    'tax_query' => array(
-//       array(
-//          'taxonomy' => 'product-type',
-//          'field'    => 'slug',
-//          'terms'    => 'bread',
-//       ),
-//    ),
 );
 $query = new WP_Query( $args ); ?>
 
 
 <?php $query = new WP_Query( $args ); /* $args set above*/ ?>
 <?php if ( $query->have_posts() ) : ?>
-   <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-      <h1><?php the_title(); ?></h1>
-      <?php the_post_thumbnail(); ?>
+   <?php while ( $query->have_posts() ) : $query->the_post(); ?><li>
+	  <?php the_post_thumbnail(); ?>
+	  <h1><?php the_title(); ?></h1>
+	  </li>
    <?php endwhile; ?>
    <?php wp_reset_postdata(); ?>
 <?php else : ?>
       <h2>Nothing found!</h2>
 <?php endif; ?>
 
-
+</ul>
 
 <?php get_footer(); ?>
 

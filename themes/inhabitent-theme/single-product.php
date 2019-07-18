@@ -9,9 +9,16 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		
-		
+        
+        <div class='productsite'>
+        <div class="productimg">
+        <img src="<?php echo CFS()->get( 'featured_image' ); ?>" />
+        </div>
 
+        <div class='productprice'>
+        <?php echo CFS()->get( 'price' ); ?>
+        </div>
+</div>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
