@@ -4,7 +4,6 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -45,6 +44,4 @@
 
 
 			<div id="content" class="site-content">
-
-			<!-- <img src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent.svg" alt="inhabitent logo">					
-				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
+			

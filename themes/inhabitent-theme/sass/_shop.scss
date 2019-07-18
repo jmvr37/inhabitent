@@ -1,5 +1,36 @@
 .archive {
-  .site-content {
+  .gridwrapper {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 200px;
+
+    .gridcontainer {
+      .postgrid {
+        .product-type {
+          padding: 10px 20px;
+          border: 3px solid grey;
+        }
+      }
+    }
+  }
+
+  .pimg {
+    width: 100%;
+    height: auto;
+
+    img {
+      height: 232px;
+      max-width: 100%;
+    }
+  }
+
+  .ptitle {
+    font-size: 13px;
+    display: inline;
+  }
+  .pprice {
+    float: right;
   }
 }
