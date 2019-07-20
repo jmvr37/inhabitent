@@ -51,10 +51,7 @@
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
-		<!-- <?php 
-			if ( has_post_thumbnail() ) {
-				the_post_thumbnail();
-				}  ?> -->
+
 
 		<?php wp_footer(); ?>
 

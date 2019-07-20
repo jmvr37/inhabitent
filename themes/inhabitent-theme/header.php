@@ -21,7 +21,7 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class='container'>
-				<div class="site-branding">
+				
 				<div class='logo'>
 				<a href="http://localhost:8888/inhabitent/" rel="home">
 					<h1 class="site-title">Inhabitent</h1>
@@ -29,7 +29,7 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 					
 				</div>
-				</div><!-- .site-branding -->
+				
 				</div>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>

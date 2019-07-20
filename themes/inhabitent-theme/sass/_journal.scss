@@ -9,66 +9,80 @@
     flex-wrap: wrap;
 
     .content-area {
-      width: 73%;
+      width: 68%;
       padding-left: 140px;
     }
   }
+}
 
-  .entry-header {
-    position: relative;
+.entry-header {
+  position: relative;
+}
+
+.journal-title {
+  background-color: #248a83;
+  max-width: 75%;
+  font-size: 2.3rem;
+  position: absolute;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  margin-top: 2.25rem;
+  top: 0px;
+
+  a {
+    text-decoration: none;
+    color: white;
   }
+}
 
-  .journal-title {
-    background-color: #248a83;
-    max-width: 75%;
-    font-size: 2.3rem;
-    position: absolute;
-    left: 0;
-    padding: 0.75rem 1.5rem;
-    margin-top: 2.25rem;
-    top: 0px;
+.entry-meta {
+  position: absolute;
+  color: white;
+  background-color: #248a83;
+  text-transform: uppercase;
+  bottom: 7px;
+  right: 69px;
+  text-decoration: none;
+  padding: 5px 25px;
+}
+
+.attachment-large {
+  width: 770px;
+  height: auto;
+}
+.entry-content {
+  margin: 0.5rem 0;
+  p {
+    margin-left: 10px;
+    margin-right: 114px;
+    text-align: initial;
 
     a {
+      border: 1px solid black;
+      padding: 13px 22px;
+      color: black;
       text-decoration: none;
-      color: white;
+      background-color: transparent;
+
+      a:hover {
+        background: #248a83;
+        color: white;
+      }
     }
   }
+}
+.widget-area {
+  border-left: 1px solid #e1e1e1;
+  padding-left: 3px;
+  width: 32%;
 
-  .entry-meta {
-    position: absolute;
-    color: white;
-    background-color: #248a83;
-    text-transform: uppercase;
-    bottom: 7px;
-    left: 300px;
-    text-decoration: none;
-  }
-
-  .attachment-large {
-    width: 770px;
-    height: auto;
-  }
-  .entry-content {
-    margin: 0.5rem 0;
-    p {
-      margin-left: 10px;
-      margin-right: 114px;
-      text-align: initial;
-    }
-  }
-  .widget-area {
-    border-left: 1px solid #e1e1e1;
-    padding-left: 3px;
-    width: 27%;
-
-    ul {
-      padding-left: 0px;
-      margin: 0;
-      li {
-        a {
-          text-decoration: none;
-          color: #248a83;
-        }
+  ul {
+    padding-left: 0px;
+    margin: 0;
+    li {
+      a {
+        text-decoration: none;
+        color: #248a83;
       }
     }
   }

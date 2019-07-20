@@ -5,6 +5,93 @@
     // margin-right: auto;
     width: 100%;
     padding-top: 0;
+
+    .title_front {
+      text-align: center;
+      margin: 70px 0;
+    }
+
+    .taxo-square {
+      display: flex;
+      flex-direction: row;
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .rect-image {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        border-top: 5px solid $medium-gray;
+        border-left: 1px solid $medium-gray;
+        border-right: 1px solid $medium-gray;
+        border-bottom: 1px solid $medium-gray;
+        align-items: center;
+        margin-right: 25px;
+        padding: 13px 12px;
+
+        &:hover {
+          border-color: $orange-color;
+        }
+        img {
+          width: 76px;
+        }
+
+        .context {
+          text-align: center;
+          padding: 0 20px;
+        }
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          border: 1px solid $green-color;
+          padding: 10px 25px;
+          background-color: $green-color;
+          color: white;
+          &:hover {
+            background-color: darken($color: $green-color, $amount: 5);
+          }
+        }
+      }
+    }
+
+    .front-post-wrap {
+      display: flex;
+      flex-direction: row;
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0;
+
+      .front-wrap-container {
+        padding-right: 24px;
+
+        .front-post-container {
+          width: 100%;
+          background-color: $medium-gray;
+
+          img {
+          }
+        }
+
+        .post-info {
+          border: 1px solid $medium-gray;
+          .front-post-title {
+            .frontpost {
+              a {
+                text-decoration: none;
+                color: $green-color;
+              }
+            }
+          }
+        }
+
+        .front-comments {
+          margin: 10px 5px;
+          font-size: 15px;
+        }
+      }
+    }
   }
 
   .logo-front {

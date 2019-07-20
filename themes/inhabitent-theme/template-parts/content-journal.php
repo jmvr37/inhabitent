@@ -24,5 +24,8 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		<p>
+			<a href="#"> Read More → </a>
+		</p>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
