@@ -64,7 +64,7 @@ $query = new WP_Query( $args ); ?>
 	  <div class="front-post-title"><?php the_title(sprintf( '<h2 class="frontpost"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>'); ?>
 	  </div>
 	  <div class="buttonfront">
-			<a href="#"> Read Entry </a>
+	  <a href="<?php echo esc_url( get_permalink() )?>"> READ ENTRY → </a></span>
 </div>
 </div>
 </div>

@@ -237,7 +237,7 @@ th {
     .archive.tax-product_type .hfeed.site .site-content .content-area .site-main .page-header .page-title {
       font-family: "Novecento Sans Web"; }
       .archive.tax-product_type .hfeed.site .site-content .content-area .site-main .page-header .page-title .taxonomy-description p {
-        font-family: "Merriweather";
+        font-family: "Merriweather Web";
         font-size: 18px;
         font-weight: lighter; }
   .archive.tax-product_type .hfeed.site .site-content .content-area .site-main .gridwrapper {
@@ -271,7 +271,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Merriweather";
+  font-family: "Merriweather Web";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -287,7 +287,7 @@ h6 {
 
 /* Copy */
 p {
-  font-family: "Merriweather";
+  font-family: "Merriweather Web";
   margin-bottom: 1.5rem; }
 
 dfn,
@@ -487,7 +487,7 @@ a {
   display: block;
   background-image: url("./inhabitent/wp-content/themes/inhabitent-theme/project-04/images/logos/inhabitent-logo-text-dark.svg");
   z-index: 3;
-  margin: 10px 80px; }
+  margin: 15px 80px 0 0; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -555,7 +555,7 @@ a {
 .logo {
   position: fixed;
   margin-left: 50px;
-  top: 33px; }
+  top: 38px; }
   .logo a h1 {
     background-image: url("/inhabitent/wp-content/themes/inhabitent-theme/images/logos/inhabitent-logo-tent.svg");
     background-size: 50px 33px;
@@ -755,7 +755,7 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid #808080;
-  height: 40px;
+  height: 50px;
   z-index: 999; }
 
 h2 {
@@ -764,23 +764,30 @@ h2 {
   text-transform: uppercase; }
 
 /* About page */
-.about-page .entry-content h2 {
-  font-family: "Novecento Sans Web";
-  font-size: 35px; }
-
-.about-page .entry-content p {
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 40px;
-  font-family: "Merriweather";
-  font-size: 20px; }
+.about-page .entry-content {
+  margin: 0; }
+  .about-page .entry-content h2 {
+    font-family: "Novecento Sans Web";
+    font-size: 35px; }
+  .about-page .entry-content p {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Merriweather Web";
+    font-size: 16px;
+    text-align: justify; }
 
 .about-page .hero-image-header {
   height: 900px; }
-  .about-page .hero-image-header h1 {
-    color: white; }
+  .about-page .hero-image-header .entry-title {
+    font-family: "Novecento Sans Web";
+    background-color: unset;
+    padding: 0;
+    margin: 0;
+    color: white;
+    position: unset; }
 
 .site-info {
   display: -webkit-box;
@@ -806,8 +813,8 @@ h3 {
   .contact .social-footer i {
     margin-right: 8px; }
   .contact p a {
-    font-size: 20px;
-    font-family: "Merriweather";
+    font-size: 16px;
+    font-family: "Merriweather Web";
     text-decoration: none;
     color: white; }
     .contact p a:hover {
@@ -817,10 +824,10 @@ h3 {
 .hours {
   padding-left: 20px;
   padding-right: 70px;
-  width: 25%; }
+  width: 30%; }
   .hours p {
-    font-family: "Merriweather";
-    font-size: 20px; }
+    font-family: "Merriweather Web";
+    font-size: 16px; }
 
 .logo-footer {
   text-decoration: none;
@@ -873,6 +880,23 @@ h3 {
       text-decoration: none;
       color: #248a83; }
 
+.wpforms-container-full .wpforms-form button {
+  background-color: #248a83 !important;
+  color: white !important;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web";
+  font-size: 14px !important;
+  padding: 10px 20px !important; }
+  .wpforms-container-full .wpforms-form button:hover {
+    background-color: #217e77 !important; }
+
+.wpforms-container-full .wpforms-form input {
+  width: 70% !important; }
+
+.wpforms-container-full .wpforms-form .wpforms-field-label {
+  font-family: "Novecento Sans Web" !important;
+  font-weight: normal !important; }
+
 /* add a container inside the site contente with a class called 'container' and set a 1180 width wit margin 0 auto to get rid of the padding left */
 .blog .site-content {
   display: -webkit-box;
@@ -921,18 +945,19 @@ h3 {
 .entry-content {
   margin: 0.5rem 0; }
   .entry-content p {
-    font-family: "Merriweather";
-    font-size: 18px;
-    margin-left: 10px;
+    font-family: "Merriweather Web";
+    font-size: 16px;
+    margin-left: 0px;
     margin-right: 0;
     text-align: initial;
     margin-bottom: 50px; }
     .entry-content p a {
       border: 1px solid black;
-      padding: 13px 22px;
+      padding: 12px 29px;
       color: black;
       text-decoration: none;
-      background-color: transparent; }
+      background-color: transparent;
+      text-transform: uppercase; }
       .entry-content p a:hover {
         background: #248a83;
         color: white;
@@ -942,16 +967,30 @@ h3 {
   padding-top: 10px;
   padding-left: 5%;
   width: 32%; }
-  .widget-area .widget .tent-biz-hours-class .days-of-week {
+  .widget-area .widget.widget_archive .widget-title {
+    font-size: 24px; }
+  .widget-area .widget.tent-biz-hours-class .widget-title {
+    font-size: 24px; }
+  .widget-area .widget.tent-biz-hours-class .days-of-week {
     font-weight: bold; }
-  .widget-area .widget_text .widget-title .textwidget .wtel p span a {
+  .widget-area .widget_text .widget-title {
+    font-size: 24px; }
+  .widget-area .widget_text .textwidget.custom-html-widget .wmail p a {
+    font-size: 16px;
+    color: #248a83;
     text-decoration: none; }
-  .widget-area ul {
-    padding-left: 0px;
-    margin: 0; }
-    .widget-area ul li a {
-      text-decoration: none;
-      color: #248a83; }
+  .widget-area .widget_text .textwidget.custom-html-widget .wtel p a {
+    font-size: 16px;
+    font-family: "Merriweather Web";
+    color: #248a83;
+    text-decoration: none; }
+
+ul {
+  padding-left: 0px;
+  margin: 0; }
+  ul li a {
+    text-decoration: none;
+    color: #248a83; }
 
 .home-page .site-content {
   width: 100%;
@@ -1058,7 +1097,7 @@ h3 {
           font-family: "Novecento Sans Web";
           text-transform: uppercase;
           border: 1px solid black;
-          padding: 10px 30px;
+          padding: 10px 8px;
           text-decoration: none;
           color: black; }
           .home-page .site-content .front-post-wrap .front-wrap-container .buttonfront a:hover {
@@ -1066,7 +1105,7 @@ h3 {
             color: white;
             border: none; }
       .home-page .site-content .front-post-wrap .front-wrap-container .front-comments {
-        font-family: "Merriweather";
+        font-family: "Merriweather Web";
         margin: 10px 5px;
         font-size: 15px; }
 
@@ -1133,9 +1172,9 @@ h3 {
       float: right;
       font-size: 15px; }
     .archive .gridwrapper .gridcontainer .postgrid .Product-type .ptitle {
-      font-family: "Merriweather";
+      font-family: "Merriweather Web";
       font-weight: lighter;
-      font-size: 18px; }
+      font-size: 15px; }
 
 .archive .ptitle {
   font-size: 13px;
@@ -1260,10 +1299,15 @@ h3 {
           .product-template-default .site-content .content-area .site-main .productsite .productprice .single-product-class .entry-header .entry-title {
             margin-bottom: 0;
             margin-top: 0;
-            color: #d99054; }
-          .product-template-default .site-content .content-area .site-main .productsite .productprice .single-product-class .entry-header .entry-price {
-            margin: 20px 0;
+            color: #d99054;
+            background-color: white;
+            position: unset;
+            padding: 0;
             font-size: 30px; }
+          .product-template-default .site-content .content-area .site-main .productsite .productprice .single-product-class .entry-header .entry-price {
+            font-family: "Novecento Sans Web";
+            margin: 20px 0;
+            font-size: 26px; }
         .product-template-default .site-content .content-area .site-main .productsite .productprice .single-product-class .entry-content p {
           margin-right: 0; }
         .product-template-default .site-content .content-area .site-main .productsite .productprice .single-product-class .entry-content .entry-footer {
@@ -1272,6 +1316,105 @@ h3 {
             background-color: #248a83;
             color: white; }
 
-.archive .date site-content {
+.archive.date .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   width: 1120px;
-  margin-left: auto; }
+  padding-top: 90px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .archive.date .site-content .content-area {
+    width: 68%; }
+    .archive.date .site-content .content-area .site-main .page-header {
+      text-align: initial;
+      padding-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      border-bottom: 1px dashed; }
+      .archive.date .site-content .content-area .site-main .page-header .page-title {
+        font-family: "Novecento Sans Web";
+        font-size: 28px; }
+
+.entry-header {
+  position: relative; }
+
+.entry-title {
+  font-family: "Novecento Sans Web";
+  background-color: #248a83;
+  max-width: 75%;
+  font-size: 2.3rem;
+  position: absolute;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  margin-top: 2.25rem;
+  top: 0px; }
+  .entry-title a {
+    text-decoration: none;
+    color: white; }
+
+.entry-meta {
+  position: absolute;
+  color: white;
+  background-color: #248a83;
+  text-transform: uppercase;
+  bottom: 7px;
+  right: 69px;
+  text-decoration: none;
+  padding: 5px 25px; }
+
+.attachment-large {
+  width: 770px;
+  height: auto; }
+
+.entry-content {
+  margin: 0.5rem 0; }
+  .entry-content p {
+    font-family: "Merriweather Web";
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0;
+    text-align: initial;
+    margin-bottom: 50px; }
+    .entry-content p a {
+      border: 1px solid black;
+      padding: 12px 29px;
+      color: black;
+      text-decoration: none;
+      background-color: transparent;
+      text-transform: uppercase; }
+      .entry-content p a:hover {
+        background: #248a83;
+        color: white;
+        border: none; }
+
+.widget-area {
+  padding-top: 10px;
+  padding-left: 5%;
+  width: 32%; }
+  .widget-area .widget.widget_archive .widget-title {
+    font-size: 24px; }
+  .widget-area .widget.tent-biz-hours-class .widget-title {
+    font-size: 24px; }
+  .widget-area .widget.tent-biz-hours-class .days-of-week {
+    font-weight: bold; }
+  .widget-area .widget_text .widget-title {
+    font-size: 24px; }
+  .widget-area .widget_text .textwidget.custom-html-widget .wmail p a {
+    font-size: 16px;
+    color: #248a83;
+    text-decoration: none; }
+  .widget-area .widget_text .textwidget.custom-html-widget .wtel p a {
+    font-size: 16px;
+    font-family: "Merriweather Web";
+    color: #248a83;
+    text-decoration: none; }
+
+ul {
+  padding-left: 0px;
+  margin: 0; }
+  ul li a {
+    text-decoration: none;
+    color: #248a83; }

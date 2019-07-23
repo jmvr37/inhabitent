@@ -53,18 +53,19 @@
   margin: 0.5rem 0;
   p {
     font-family: $font__main;
-    font-size: 18px;
-    margin-left: 10px;
+    font-size: 16px;
+    margin-left: 0px;
     margin-right: 0;
     text-align: initial;
     margin-bottom: 50px;
 
     a {
       border: 1px solid black;
-      padding: 13px 22px;
+      padding: 12px 29px;
       color: black;
       text-decoration: none;
       background-color: transparent;
+      text-transform: uppercase;
 
       &:hover {
         background: #248a83;
@@ -79,7 +80,16 @@
   padding-left: 5%;
   width: 32%;
 
-  .widget .tent-biz-hours-class {
+  .widget.widget_archive {
+    .widget-title {
+      font-size: 24px;
+    }
+  }
+
+  .widget.tent-biz-hours-class {
+    .widget-title {
+      font-size: 24px;
+    }
     .days-of-week {
       font-weight: bold;
     }
@@ -87,28 +97,39 @@
 
   .widget_text {
     .widget-title {
-      .textwidget {
-        .wtel {
-          p {
-            span {
-              a {
-                text-decoration: none;
-              }
-            }
+      font-size: 24px;
+    }
+    .textwidget.custom-html-widget {
+      .wmail {
+        p {
+          a {
+            font-size: 16px;
+            color: $green-color;
+            text-decoration: none;
+          }
+        }
+      }
+      .wtel {
+        p {
+          a {
+            font-size: 16px;
+            font-family: $font__main;
+            color: $green-color;
+            text-decoration: none;
           }
         }
       }
     }
   }
+}
 
-  ul {
-    padding-left: 0px;
-    margin: 0;
-    li {
-      a {
-        text-decoration: none;
-        color: #248a83;
-      }
+ul {
+  padding-left: 0px;
+  margin: 0;
+  li {
+    a {
+      text-decoration: none;
+      color: #248a83;
     }
   }
 }
