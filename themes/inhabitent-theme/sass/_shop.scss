@@ -10,6 +10,7 @@
 
       .taxo-title {
         margin: 0;
+        font-family: $font_title;
       }
       .taxo {
         display: flex;
@@ -26,7 +27,8 @@
 
           a {
             text-decoration: none;
-            color: #248a83;
+            color: $green-color;
+            font-family: $font_title;
           }
         }
       }
@@ -57,8 +59,18 @@
         }
 
         .Product-type {
-          padding: 14px 15px;
+          padding: 14px 8px;
           border: 1px solid #e1e1e1;
+
+          .pprice {
+            float: right;
+            font-size: 15px;
+          }
+          .ptitle {
+            font-family: $font__main;
+            font-weight: lighter;
+            font-size: 18px;
+          }
         }
       }
     }
@@ -70,5 +82,11 @@
   }
   .pprice {
     float: right;
+  }
+
+  .tax-product_type {
+    h1 {
+      color: red;
+    }
   }
 }

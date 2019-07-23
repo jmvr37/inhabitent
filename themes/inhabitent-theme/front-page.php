@@ -6,22 +6,13 @@
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 	<div class="logo-front">
 	<img src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg" alt="inhabitent logo">					
 	</div>
 	
-<?php the_content(); ?>
+<?php //the_content(); ?>
 
 
 <div class='heroimg'>
@@ -71,7 +62,10 @@ $query = new WP_Query( $args ); ?>
 	  <div class="post-info">
 	 <div class="front-comments"> <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?></div>
 	  <div class="front-post-title"><?php the_title(sprintf( '<h2 class="frontpost"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>'); ?>
-	   </div>
+	  </div>
+	  <div class="buttonfront">
+			<a href="#"> Read Entry </a>
+</div>
 </div>
 </div>
    <?php endwhile; ?>

@@ -26,7 +26,17 @@ function red_starter_body_classes( $classes ) {
 	if ( is_page( 'FINDUS' ) ) {
 	$classes[] = 'find-page';
 	
-    }
+	}
+	if ( is_page( 'single-product' ) ) {
+		$classes[] = 'single-product';
+		
+		}
+
+	if ( is_page( 'taxonomy-product_type' ) ) {
+			$classes[] = 'tax';
+			
+		}
+
 		// Separates class names with a single space, collates class names for body element
 
 	return $classes;

@@ -14,17 +14,18 @@ get_header(); ?>
         <div class="productimg">
         <img src="<?php echo CFS()->get( 'featured_image' ); ?>" />
         </div>
-
+		
         <div class='productprice'>
-        <?php echo CFS()->get( 'price' ); ?>
-        </div>
-</div>
-
+		
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+        </div>
+</div>
 
-			<?php the_post_navigation(); ?>
+		
+
+			
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -38,5 +39,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

@@ -1,14 +1,13 @@
 .home-page {
   .site-content {
-    // display: flex;
-    // margin-left: auto;
-    // margin-right: auto;
     width: 100%;
     padding-top: 0;
 
     .title_front {
+      font-family: $font-title;
       text-align: center;
       margin: 70px 0;
+      font-size: 35px;
     }
 
     .taxo-square {
@@ -39,9 +38,11 @@
 
         .context {
           text-align: center;
-          padding: 0 20px;
+          padding: 0 7px;
+          font-size: 18px;
         }
         a {
+          font-family: $font_title;
           text-decoration: none;
           text-transform: uppercase;
           border: 1px solid $green-color;
@@ -62,6 +63,8 @@
       margin-left: auto;
       margin-right: auto;
       padding-left: 0;
+      margin-bottom: 40px;
+      height: 500px;
 
       .front-wrap-container {
         padding-right: 24px;
@@ -71,22 +74,54 @@
           background-color: $medium-gray;
 
           img {
+            height: 223px;
+            object-fit: cover;
           }
         }
 
         .post-info {
-          border: 1px solid $medium-gray;
+          height: 153px;
+          flex-direction: column;
+          border: 1px solid $light-gray;
+
           .front-post-title {
+            font-family: 'Novecento Sans Web';
+            padding: 0 20px;
+            line-height: 0;
+
             .frontpost {
+              margin: 0;
               a {
+                line-height: 1;
+                font-family: $font-title;
+                font-size: 20px;
                 text-decoration: none;
                 color: $green-color;
               }
             }
           }
         }
+        .buttonfront {
+          margin-left: 20px;
+          line-height: 0;
+          padding-top: 40px;
+          a {
+            font-family: $font-title;
+            text-transform: uppercase;
+            border: 1px solid black;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: black;
+            &:hover {
+              background-color: $green-color;
+              color: white;
+              border: none;
+            }
+          }
+        }
 
         .front-comments {
+          font-family: $font__main;
           margin: 10px 5px;
           font-size: 15px;
         }

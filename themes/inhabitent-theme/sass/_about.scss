@@ -1,11 +1,18 @@
 /* About page */
 .about-page {
   .entry-content {
+    h2 {
+      font-family: $font_title;
+      font-size: 35px;
+    }
     p {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
-      margin-left: 300px;
-      margin-right: 300px;
-      // width: 100%;
+      margin-top: 40px;
+      font-family: $font__main;
+      font-size: 20px;
     }
   }
 
@@ -17,7 +24,3 @@
     }
   }
 }
-// img {
-//   width: 70px;
-//   margin-left: 50px;
-// }

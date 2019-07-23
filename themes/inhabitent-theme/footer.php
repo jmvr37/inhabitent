@@ -15,13 +15,13 @@
 						<h3>CONTACT INFO</h3>
 						<p>
 						<i class="far fa-envelope"></i>
-						<a href="#">info@inhabitent.com</a>
+						<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 						</p>
 						<p>
 						<i class="fas fa-phone-square-alt"></i>
-						<a href="#">778-456-7891</a>
+						<a href="tel:778-456-7891">778-456-7891</a>
 						</p>	
-						<p>
+						<p class="social-footer">
 						<i class="fab fa-facebook-square"></i>
 						<i class="fab fa-instagram"></i>
 						<i class="fab fa-google-plus-g"></i>
