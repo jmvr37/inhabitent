@@ -8,9 +8,7 @@
 get_header(); ?>
 
 
-	<div class="logo-front">
-	<img src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg" alt="inhabitent logo">					
-	</div>
+	
 	
 <?php //the_content(); ?>
 
@@ -20,6 +18,9 @@ get_header(); ?>
 if ( has_post_thumbnail() ) {
 the_post_thumbnail();
 }  ?>
+<div class="logo-front">
+	<img src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg" alt="inhabitent logo">					
+	</div>
 </div>
 
 <h1 class="title_front"> SHOP STUFF </h1>

@@ -1,0 +1,66 @@
+.error404 {
+  .site-content {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    padding-top: 90px;
+    flex-wrap: wrap;
+
+    .content-area {
+      width: 68%;
+      .site-main {
+        .page-title {
+          text-transform: uppercase;
+        }
+        .page-content {
+          .search-form {
+            border: none;
+            fieldset {
+              border: none;
+              padding: 0;
+
+              label {
+                input {
+                  ::placeholder {
+                    color: red;
+                  }
+                }
+              }
+
+              .search-field {
+                border: 1px solid #e1e1e1;
+                display: block;
+                background-color: #f4f4f4;
+                box-shadow: none;
+                font-size: 1rem;
+                font-family: 'Novecento Sans Web', sans-serif;
+                padding-left: 10px;
+                padding-top: 0;
+                color: #666;
+              }
+              .search-field:focus {
+                outline: none;
+              }
+              .search-submit {
+                display: none;
+                border: none;
+                background: transparent;
+                box-shadow: none;
+                color: $color__link;
+                font-size: 0.9rem;
+                float: left;
+                padding: 5px 16px;
+                .icon-search {
+                  .fa {
+                    color: $green-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

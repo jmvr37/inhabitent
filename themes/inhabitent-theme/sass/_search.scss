@@ -1,0 +1,153 @@
+.search {
+  .site-content {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    padding-top: 90px;
+    flex-wrap: wrap;
+
+    .content-area {
+      width: 68%;
+      .site-main {
+        .search-pagination {
+          border-top: 1px solid #e1e1e1;
+          padding: 1.5rem 0;
+          text-transform: uppercase;
+          a {
+            font-family: 'Novecento Sans Web', sans-serif;
+            background-color: #248a83;
+            color: white;
+            display: inline-block;
+            line-height: 1;
+            padding: 0.5rem 0.75rem;
+            margin-right: 0.25rem;
+            text-align: center;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.entry-header {
+  position: relative;
+}
+
+.entry-title {
+  background-color: transparent;
+  position: relative;
+  font-family: $font_title;
+  max-width: 75%;
+  font-size: 2.3rem;
+  left: 0;
+  padding: 0;
+  margin-top: 2.25rem;
+  top: 0px;
+
+  a {
+    text-decoration: none;
+    color: #248a83;
+  }
+}
+
+.entry-meta {
+  position: unset;
+  color: black;
+  background-color: transparent;
+  text-transform: uppercase;
+  bottom: 7px;
+  right: 69px;
+  text-decoration: none;
+  padding: 0;
+}
+
+.attachment-large {
+  width: 770px;
+  height: auto;
+}
+.entry-content {
+  margin: 0.5rem 0;
+  p {
+    font-family: $font__main;
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0;
+    text-align: initial;
+    margin-bottom: 50px;
+
+    a {
+      border: 1px solid black;
+      padding: 12px 29px;
+      color: black;
+      text-decoration: none;
+      background-color: transparent;
+      text-transform: uppercase;
+
+      &:hover {
+        background: #248a83;
+        color: white;
+        border: none;
+      }
+    }
+  }
+}
+.widget-area {
+  padding-top: 10px;
+  padding-left: 5%;
+  width: 32%;
+
+  .widget.widget_archive {
+    .widget-title {
+      font-size: 24px;
+    }
+  }
+
+  .widget.tent-biz-hours-class {
+    .widget-title {
+      font-size: 24px;
+    }
+    .days-of-week {
+      font-weight: bold;
+    }
+  }
+
+  .widget_text {
+    .widget-title {
+      font-size: 24px;
+    }
+    .textwidget.custom-html-widget {
+      .wmail {
+        p {
+          a {
+            font-size: 16px;
+            color: $green-color;
+            text-decoration: none;
+          }
+        }
+      }
+      .wtel {
+        p {
+          a {
+            font-size: 16px;
+            font-family: $font__main;
+            color: $green-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+ul {
+  padding-left: 0px;
+  margin: 0;
+  li {
+    a {
+      text-decoration: none;
+      color: #248a83;
+    }
+  }
+}

@@ -484,7 +484,9 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-image: url("./inhabitent/wp-content/themes/inhabitent-theme/project-04/images/logos/inhabitent-logo-text-dark.svg");
   z-index: 3;
   margin: 15px 80px 0 0; }
@@ -563,6 +565,41 @@ a {
     overflow: hidden;
     text-indent: 100%;
     margin: 0; }
+
+.search-form {
+  border: none; }
+  .search-form fieldset {
+    border: none;
+    padding: 0; }
+    .search-form fieldset label input ::-webkit-input-placeholder {
+      color: red; }
+    .search-form fieldset label input ::-ms-input-placeholder {
+      color: red; }
+    .search-form fieldset label input ::placeholder {
+      color: red; }
+    .search-form fieldset .search-field {
+      border: none;
+      display: none;
+      background: transparent;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      font-size: 1rem;
+      font-family: 'Novecento Sans Web', sans-serif;
+      padding-left: 10px;
+      padding-top: 0; }
+    .search-form fieldset .search-field:focus {
+      outline: none; }
+    .search-form fieldset .search-submit {
+      border: none;
+      background: transparent;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: royalblue;
+      font-size: 0.9rem;
+      float: left;
+      padding: 5px 16px; }
+      .search-form fieldset .search-submit .icon-search .fa {
+        color: #248a83; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1149,11 +1186,13 @@ ul {
         font-family: "Novecento Sans Web"; }
 
 .archive .gridwrapper {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 30px;
-  padding: 0 200px 84px; }
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px; }
   .archive .gridwrapper .gridcontainer .postgrid .pimg {
     width: 100%;
     height: auto;
@@ -1167,24 +1206,24 @@ ul {
          object-fit: cover; }
   .archive .gridwrapper .gridcontainer .postgrid .Product-type {
     padding: 14px 8px;
-    border: 1px solid #e1e1e1; }
+    border: 1px solid #e1e1e1;
+    position: relative; }
     .archive .gridwrapper .gridcontainer .postgrid .Product-type .pprice {
       float: right;
-      font-size: 15px; }
+      font-size: 15px;
+      background: white; }
+      .archive .gridwrapper .gridcontainer .postgrid .Product-type .pprice:before {
+        content: '......................................';
+        white-space: nowrap;
+        z-index: -1;
+        position: absolute;
+        left: 70px; }
     .archive .gridwrapper .gridcontainer .postgrid .Product-type .ptitle {
       font-family: "Merriweather Web";
       font-weight: lighter;
-      font-size: 15px; }
-
-.archive .ptitle {
-  font-size: 13px;
-  display: inline; }
-
-.archive .pprice {
-  float: right; }
-
-.archive .tax-product_type h1 {
-  color: red; }
+      font-size: 15px;
+      background: white;
+      display: inline; }
 
 .post-template-default .site-content {
   display: -webkit-box;
@@ -1624,3 +1663,162 @@ ul {
   ul li a {
     text-decoration: none;
     color: #248a83; }
+
+.search .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-top: 90px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .search .site-content .content-area {
+    width: 68%; }
+    .search .site-content .content-area .site-main .search-pagination {
+      border-top: 1px solid #e1e1e1;
+      padding: 1.5rem 0;
+      text-transform: uppercase; }
+      .search .site-content .content-area .site-main .search-pagination a {
+        font-family: 'Novecento Sans Web', sans-serif;
+        background-color: #248a83;
+        color: white;
+        display: inline-block;
+        line-height: 1;
+        padding: 0.5rem 0.75rem;
+        margin-right: 0.25rem;
+        text-align: center;
+        text-decoration: none; }
+
+.entry-header {
+  position: relative; }
+
+.entry-title {
+  background-color: transparent;
+  position: relative;
+  font-family: "Novecento Sans Web";
+  max-width: 75%;
+  font-size: 2.3rem;
+  left: 0;
+  padding: 0;
+  margin-top: 2.25rem;
+  top: 0px; }
+  .entry-title a {
+    text-decoration: none;
+    color: #248a83; }
+
+.entry-meta {
+  position: unset;
+  color: black;
+  background-color: transparent;
+  text-transform: uppercase;
+  bottom: 7px;
+  right: 69px;
+  text-decoration: none;
+  padding: 0; }
+
+.attachment-large {
+  width: 770px;
+  height: auto; }
+
+.entry-content {
+  margin: 0.5rem 0; }
+  .entry-content p {
+    font-family: "Merriweather Web";
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0;
+    text-align: initial;
+    margin-bottom: 50px; }
+    .entry-content p a {
+      border: 1px solid black;
+      padding: 12px 29px;
+      color: black;
+      text-decoration: none;
+      background-color: transparent;
+      text-transform: uppercase; }
+      .entry-content p a:hover {
+        background: #248a83;
+        color: white;
+        border: none; }
+
+.widget-area {
+  padding-top: 10px;
+  padding-left: 5%;
+  width: 32%; }
+  .widget-area .widget.widget_archive .widget-title {
+    font-size: 24px; }
+  .widget-area .widget.tent-biz-hours-class .widget-title {
+    font-size: 24px; }
+  .widget-area .widget.tent-biz-hours-class .days-of-week {
+    font-weight: bold; }
+  .widget-area .widget_text .widget-title {
+    font-size: 24px; }
+  .widget-area .widget_text .textwidget.custom-html-widget .wmail p a {
+    font-size: 16px;
+    color: #248a83;
+    text-decoration: none; }
+  .widget-area .widget_text .textwidget.custom-html-widget .wtel p a {
+    font-size: 16px;
+    font-family: "Merriweather Web";
+    color: #248a83;
+    text-decoration: none; }
+
+ul {
+  padding-left: 0px;
+  margin: 0; }
+  ul li a {
+    text-decoration: none;
+    color: #248a83; }
+
+.error404 .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-top: 90px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .error404 .site-content .content-area {
+    width: 68%; }
+    .error404 .site-content .content-area .site-main .page-title {
+      text-transform: uppercase; }
+    .error404 .site-content .content-area .site-main .page-content .search-form {
+      border: none; }
+      .error404 .site-content .content-area .site-main .page-content .search-form fieldset {
+        border: none;
+        padding: 0; }
+        .error404 .site-content .content-area .site-main .page-content .search-form fieldset label input ::-webkit-input-placeholder {
+          color: red; }
+        .error404 .site-content .content-area .site-main .page-content .search-form fieldset label input ::-ms-input-placeholder {
+          color: red; }
+        .error404 .site-content .content-area .site-main .page-content .search-form fieldset label input ::placeholder {
+          color: red; }
+        .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-field {
+          border: 1px solid #e1e1e1;
+          display: block;
+          background-color: #f4f4f4;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          font-size: 1rem;
+          font-family: 'Novecento Sans Web', sans-serif;
+          padding-left: 10px;
+          padding-top: 0;
+          color: #666; }
+        .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-field:focus {
+          outline: none; }
+        .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-submit {
+          display: none;
+          border: none;
+          background: transparent;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          color: royalblue;
+          font-size: 0.9rem;
+          float: left;
+          padding: 5px 16px; }
+          .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-submit .icon-search .fa {
+            color: #248a83; }
