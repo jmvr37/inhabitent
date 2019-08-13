@@ -14,6 +14,10 @@ get_header(); ?>
 
 
 <div class='heroimg'>
+	<div class='hero-image' style="background:url('<?php the_post_thumbnail_url();?>')">
+
+	</div>
+
 <?php 
 if ( has_post_thumbnail() ) {
 the_post_thumbnail();

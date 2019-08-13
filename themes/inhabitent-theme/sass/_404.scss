@@ -12,8 +12,19 @@
       .site-main {
         .page-title {
           text-transform: uppercase;
+          letter-spacing: 2px;
+          font-family: 'Novecento Sans Web', sans-serif;
         }
         .page-content {
+          .widgettitle {
+            font-size: 23px;
+          }
+          .widget-title {
+            font-size: 23px;
+          }
+          .widget.widget_archive {
+            margin-bottom: 80px;
+          }
           .search-form {
             border: none;
             fieldset {

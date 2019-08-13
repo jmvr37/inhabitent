@@ -817,7 +817,7 @@ h2 {
     text-align: justify; }
 
 .about-page .hero-image-header {
-  height: 900px; }
+  height: 100vh; }
   .about-page .hero-image-header .entry-title {
     font-family: "Novecento Sans Web";
     background-color: unset;
@@ -928,11 +928,17 @@ h3 {
     background-color: #217e77 !important; }
 
 .wpforms-container-full .wpforms-form input {
-  width: 70% !important; }
+  width: 350px !important;
+  background-color: #f4f4f4 !important; }
 
 .wpforms-container-full .wpforms-form .wpforms-field-label {
   font-family: "Novecento Sans Web" !important;
   font-weight: normal !important; }
+
+.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+  height: 240px !important;
+  width: 95% !important;
+  background-color: #f4f4f4 !important; }
 
 /* add a container inside the site contente with a class called 'container' and set a 1180 width wit margin 0 auto to get rid of the padding left */
 .blog .site-content {
@@ -947,6 +953,16 @@ h3 {
       flex-wrap: wrap; }
   .blog .site-content .content-area {
     width: 68%; }
+
+.blog .entry-meta {
+  position: absolute;
+  color: white;
+  background-color: #248a83;
+  text-transform: uppercase;
+  bottom: 7px;
+  right: 0px;
+  text-decoration: none;
+  padding: 5px 25px; }
 
 .entry-header {
   position: relative; }
@@ -964,16 +980,6 @@ h3 {
   .journal-title a {
     text-decoration: none;
     color: white; }
-
-.entry-meta {
-  position: absolute;
-  color: white;
-  background-color: #248a83;
-  text-transform: uppercase;
-  bottom: 7px;
-  right: 69px;
-  text-decoration: none;
-  padding: 5px 25px; }
 
 .attachment-large {
   width: 770px;
@@ -1032,6 +1038,26 @@ ul {
 .home-page .site-content {
   width: 100%;
   padding-top: 0; }
+  .home-page .site-content .heroimg {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .home-page .site-content .heroimg img {
+      height: 100vh;
+      width: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(0%, rgba(0, 0, 0, 0.4))), no-repeat center bottom;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 0%), no-repeat center bottom; }
+    .home-page .site-content .heroimg .logo-front {
+      position: absolute;
+      top: 303px;
+      right: 554px;
+      width: 300px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .home-page .site-content .heroimg .logo-front img {
+        width: 275px;
+        height: 275px; }
   .home-page .site-content .title_front {
     font-family: "Novecento Sans Web";
     text-align: center;
@@ -1146,15 +1172,6 @@ ul {
         margin: 10px 5px;
         font-size: 15px; }
 
-.home-page .logo-front {
-  position: absolute;
-  top: 303px;
-  right: 554px;
-  width: 300px; }
-
-.home-page img {
-  width: 100%; }
-
 .archive .site-content .page-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -1238,6 +1255,15 @@ ul {
   .post-template-default .site-content .content-area {
     width: 68%;
     padding-left: 140px; }
+  .post-template-default .site-content .entry-meta {
+    position: absolute;
+    color: white;
+    background-color: #248a83;
+    text-transform: uppercase;
+    bottom: 7px;
+    right: 69px;
+    text-decoration: none;
+    padding: 5px 25px; }
   .post-template-default .site-content .entry-content {
     margin: 0; }
     .post-template-default .site-content .entry-content p {
@@ -1304,18 +1330,36 @@ ul {
       color: #248a83; }
 
 .comments-area .comment-respond .comment-reply-title {
-  color: black; }
+  color: black;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: normal; }
 
 .comment-form .comment-form-comment {
   text-transform: uppercase;
-  font-size: 25px; }
+  font-size: 20px;
+  font-family: "Novecento Sans Web"; }
   .comment-form .comment-form-comment #comment {
     margin: 0px;
-    width: 100%;
+    width: 90%;
     height: 251px;
     border: 1px solid #e1e1e1;
     background-color: #f4f4f4;
     padding-left: 3px; }
+
+.comment-form .form-submit .submit {
+  border: 1px solid;
+  border-color: #248a83;
+  border-radius: 0px;
+  background: #248a83;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+  padding: 12px 33px;
+  text-shadow: none;
+  font-size: 14px; }
+  .comment-form .form-submit .submithover {
+    background-color: #22827b; }
 
 .product-template-default .site-content {
   width: 1120px;
@@ -1746,7 +1790,7 @@ ul {
 .widget-area {
   padding-top: 10px;
   padding-left: 5%;
-  width: 32%; }
+  width: 27%; }
   .widget-area .widget.widget_archive .widget-title {
     font-size: 24px; }
   .widget-area .widget.tent-biz-hours-class .widget-title {
@@ -1785,7 +1829,15 @@ ul {
   .error404 .site-content .content-area {
     width: 68%; }
     .error404 .site-content .content-area .site-main .page-title {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: 'Novecento Sans Web', sans-serif; }
+    .error404 .site-content .content-area .site-main .page-content .widgettitle {
+      font-size: 23px; }
+    .error404 .site-content .content-area .site-main .page-content .widget-title {
+      font-size: 23px; }
+    .error404 .site-content .content-area .site-main .page-content .widget.widget_archive {
+      margin-bottom: 80px; }
     .error404 .site-content .content-area .site-main .page-content .search-form {
       border: none; }
       .error404 .site-content .content-area .site-main .page-content .search-form fieldset {

@@ -50,11 +50,18 @@
 }
 
 .wpforms-container-full .wpforms-form input {
-  width: 70% !important;
+  width: 350px !important;
+  background-color: #f4f4f4 !important;
 }
 
 .wpforms-container-full .wpforms-form .wpforms-field-label {
   font-family: $font-title !important;
   font-weight: normal !important;
+}
+
+.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+  height: 240px !important;
+  width: 95% !important;
+  background-color: #f4f4f4 !important;
 }
 /* add a container inside the site contente with a class called 'container' and set a 1180 width wit margin 0 auto to get rid of the padding left */
