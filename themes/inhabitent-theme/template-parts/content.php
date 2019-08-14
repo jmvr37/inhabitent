@@ -24,5 +24,9 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		<p>
+			<span class="journ-button">
+			<a href="<?php echo esc_url( get_permalink() )?>"> Read More → </a></span>
+		</p>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

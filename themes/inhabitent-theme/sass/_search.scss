@@ -4,12 +4,45 @@
     margin-left: auto;
     margin-right: auto;
     width: 1120px;
-    padding-top: 90px;
+    padding-top: 50px;
     flex-wrap: wrap;
 
     .content-area {
       width: 68%;
+      padding-right: 5%;
+      border-right: 1px solid #e1e1e1;
       .site-main {
+        .entry-header {
+          position: relative;
+          .entry-title {
+            background-color: transparent;
+            position: relative;
+            font-family: $font_title;
+            max-width: 75%;
+            font-size: 2.3rem;
+            left: 0;
+            padding: 0;
+            margin-top: 2.25rem;
+            top: 0px;
+
+            a {
+              text-decoration: none;
+              color: #248a83;
+            }
+          }
+        }
+
+        .page-header {
+          .page-title {
+            text-transform: uppercase;
+            border-bottom: 1px solid #e1e1e1;
+            margin-bottom: 20px;
+            margin-top: 50px;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            font-family: $font_title;
+          }
+        }
         .search-pagination {
           border-top: 1px solid #e1e1e1;
           padding: 1.5rem 0;
@@ -30,31 +63,11 @@
             padding: 0.3rem 0.75rem;
             margin-right: 0.25rem;
             line-height: 1;
+            color: white;
           }
         }
       }
     }
-  }
-}
-
-.entry-header {
-  position: relative;
-}
-
-.entry-title {
-  background-color: transparent;
-  position: relative;
-  font-family: $font_title;
-  max-width: 75%;
-  font-size: 2.3rem;
-  left: 0;
-  padding: 0;
-  margin-top: 2.25rem;
-  top: 0px;
-
-  a {
-    text-decoration: none;
-    color: #248a83;
   }
 }
 

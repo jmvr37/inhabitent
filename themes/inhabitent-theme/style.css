@@ -791,7 +791,7 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #e1e1e1;
   height: 50px;
   z-index: 999; }
 
@@ -900,7 +900,7 @@ h3 {
 
 .page-id-49 .content-area {
   width: 80%;
-  border-right: 1px solid #a1a1a1; }
+  border-right: 1px solid #e1e1e1; }
   .page-id-49 .content-area .site-main .find-title {
     font-size: 33px;
     text-transform: uppercase;
@@ -954,7 +954,7 @@ h3 {
   .blog .site-content .content-area {
     width: 68%;
     padding-right: 5%;
-    border-right: 1px solid black; }
+    border-right: 1px solid #e1e1e1; }
     .blog .site-content .content-area .site-main {
       margin-top: 40px; }
 
@@ -1042,26 +1042,20 @@ ul {
 .home-page .site-content {
   width: 100%;
   padding-top: 0; }
-  .home-page .site-content .heroimg {
+  .home-page .site-content .hero-image {
+    height: 100vh;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(//localhost:3000/inhabitent/wp-content/uploads/2019/07/home-hero.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(//localhost:3000/inhabitent/wp-content/uploads/2019/07/home-hero.jpg);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .home-page .site-content .heroimg img {
-      height: 100vh;
-      width: 100%;
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(0%, rgba(0, 0, 0, 0.4))), no-repeat center bottom;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 0%), no-repeat center bottom; }
-    .home-page .site-content .heroimg .logo-front {
-      position: absolute;
-      top: 303px;
-      right: 554px;
-      width: 300px;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      .home-page .site-content .heroimg .logo-front img {
-        width: 275px;
-        height: 275px; }
   .home-page .site-content .title_front {
     font-family: "Novecento Sans Web";
     text-align: center;
@@ -1386,6 +1380,8 @@ ul {
         margin-left: 40px; }
         .product-template-default .site-content .content-area .site-main .productsite .productprice .single-product-class .entry-header {
           margin-left: 10px; }
+          .product-template-default .site-content .content-area .site-main .productsite .productprice .single-product-class .entry-header .entry-meta {
+            display: none; }
           .product-template-default .site-content .content-area .site-main .productsite .productprice .single-product-class .entry-header .entry-title {
             margin-bottom: 0;
             margin-top: 0;
@@ -1393,7 +1389,7 @@ ul {
             background-color: white;
             position: unset;
             padding: 0;
-            font-size: 30px; }
+            font-size: 2.4rem; }
           .product-template-default .site-content .content-area .site-main .productsite .productprice .single-product-class .entry-header .entry-price {
             font-family: "Novecento Sans Web";
             margin: 20px 0;
@@ -1413,37 +1409,48 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
-  padding-top: 90px;
+  padding-top: 50px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .archive.date .site-content .content-area {
-    width: 68%; }
-    .archive.date .site-content .content-area .site-main .page-header {
-      text-align: initial;
-      padding-top: 0;
-      margin-left: 0;
-      margin-right: 0;
-      border-bottom: 1px dashed; }
-      .archive.date .site-content .content-area .site-main .page-header .page-title {
-        font-family: "Novecento Sans Web";
-        font-size: 28px; }
+    width: 68%;
+    padding-right: 5%;
+    border-right: 1px solid #e1e1e1; }
+    .archive.date .site-content .content-area .site-main {
+      margin-top: 40px; }
+      .archive.date .site-content .content-area .site-main .page-header {
+        text-align: initial;
+        margin-bottom: 3rem;
+        border-bottom: 1px dashed;
+        padding-top: 0;
+        margin-left: 0;
+        margin-right: 0; }
+
+.archive.date .entry-meta {
+  position: absolute;
+  color: white;
+  background-color: #248a83;
+  text-transform: uppercase;
+  bottom: 7px;
+  right: 0px;
+  text-decoration: none;
+  padding: 5px 25px; }
 
 .entry-header {
   position: relative; }
-
-.entry-title {
-  font-family: "Novecento Sans Web";
-  background-color: #248a83;
-  max-width: 75%;
-  font-size: 2.3rem;
-  position: absolute;
-  left: 0;
-  padding: 0.75rem 1.5rem;
-  margin-top: 2.25rem;
-  top: 0px; }
-  .entry-title a {
-    text-decoration: none;
-    color: white; }
+  .entry-header .entry-title {
+    font-family: "Novecento Sans Web";
+    background-color: #248a83;
+    max-width: 75%;
+    font-size: 2.3rem;
+    position: absolute;
+    left: 0;
+    padding: 0.75rem 1.5rem;
+    margin-top: 2.25rem;
+    top: 0px; }
+    .entry-header .entry-title a {
+      text-decoration: none;
+      color: white; }
 
 .entry-meta {
   position: absolute;
@@ -1722,11 +1729,36 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
-  padding-top: 90px;
+  padding-top: 50px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .search .site-content .content-area {
-    width: 68%; }
+    width: 68%;
+    padding-right: 5%;
+    border-right: 1px solid #e1e1e1; }
+    .search .site-content .content-area .site-main .entry-header {
+      position: relative; }
+      .search .site-content .content-area .site-main .entry-header .entry-title {
+        background-color: transparent;
+        position: relative;
+        font-family: "Novecento Sans Web";
+        max-width: 75%;
+        font-size: 2.3rem;
+        left: 0;
+        padding: 0;
+        margin-top: 2.25rem;
+        top: 0px; }
+        .search .site-content .content-area .site-main .entry-header .entry-title a {
+          text-decoration: none;
+          color: #248a83; }
+    .search .site-content .content-area .site-main .page-header .page-title {
+      text-transform: uppercase;
+      border-bottom: 1px solid #e1e1e1;
+      margin-bottom: 20px;
+      margin-top: 50px;
+      letter-spacing: 2px;
+      font-size: 2rem;
+      font-family: "Novecento Sans Web"; }
     .search .site-content .content-area .site-main .search-pagination {
       border-top: 1px solid #e1e1e1;
       padding: 1.5rem 0;
@@ -1745,24 +1777,8 @@ ul {
         background-color: gray;
         padding: 0.3rem 0.75rem;
         margin-right: 0.25rem;
-        line-height: 1; }
-
-.entry-header {
-  position: relative; }
-
-.entry-title {
-  background-color: transparent;
-  position: relative;
-  font-family: "Novecento Sans Web";
-  max-width: 75%;
-  font-size: 2.3rem;
-  left: 0;
-  padding: 0;
-  margin-top: 2.25rem;
-  top: 0px; }
-  .entry-title a {
-    text-decoration: none;
-    color: #248a83; }
+        line-height: 1;
+        color: white; }
 
 .entry-meta {
   position: unset;

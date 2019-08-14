@@ -3,32 +3,18 @@
     width: 100%;
     padding-top: 0;
 
-    .heroimg {
+    .hero-image {
+      height: 100vh;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.4) 0,
+          rgba(0, 0, 0, 0.4)
+        ),
+        url(//localhost:3000/inhabitent/wp-content/uploads/2019/07/home-hero.jpg);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
       align-items: center;
-
-      img {
-        height: 100vh;
-        width: 100%;
-        background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.4) 0%,
-            rgba(0, 0, 0, 0.4) 0%
-          ),
-          no-repeat center bottom;
-        // background-size: cover center;
-      }
-      .logo-front {
-        position: absolute;
-        top: 303px;
-        right: 554px;
-        width: 300px;
-        justify-content: center;
-
-        img {
-          width: 275px;
-          height: 275px;
-        }
-      }
     }
 
     .title_front {

@@ -13,19 +13,20 @@ get_header(); ?>
 <?php //the_content(); ?>
 
 
-<div class='heroimg'>
-	<div class='hero-image' style="background:url('<?php the_post_thumbnail_url();?>')">
+
+	<div class='hero-image' style="background-image:url('<?php the_post_thumbnail_url();?>')">
+
+		<div class="logo-front">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg" alt="inhabitent logo">					
+
+		</div>
+
 
 	</div>
 
-<?php 
-if ( has_post_thumbnail() ) {
-the_post_thumbnail();
-}  ?>
-<div class="logo-front">
-	<img src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg" alt="inhabitent logo">					
-	</div>
-</div>
+
+
+
 
 <h1 class="title_front"> SHOP STUFF </h1>
 
