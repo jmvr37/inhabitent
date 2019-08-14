@@ -14,7 +14,11 @@ get_header(); ?>
 
 
 
-	<div class='hero-image' style="background-image:url('<?php the_post_thumbnail_url();?>')">
+	<div class='hero-image' style="background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.4) 0,
+          rgba(0, 0, 0, 0.4)
+        ),url('<?php the_post_thumbnail_url();?>')">
 
 		<div class="logo-front">
 			<img src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg" alt="inhabitent logo">					

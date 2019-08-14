@@ -4,12 +4,15 @@
     margin-left: auto;
     margin-right: auto;
     width: 1120px;
-    padding-top: 90px;
+    padding-top: 50px;
     flex-wrap: wrap;
 
     .content-area {
       width: 68%;
+      padding-right: 5%;
+      border-right: 1px solid #e1e1e1;
       .site-main {
+        margin-top: 40px;
         .page-title {
           text-transform: uppercase;
           letter-spacing: 2px;

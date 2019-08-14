@@ -5,12 +5,6 @@
 
     .hero-image {
       height: 100vh;
-      background: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.4) 0,
-          rgba(0, 0, 0, 0.4)
-        ),
-        url(//localhost:3000/inhabitent/wp-content/uploads/2019/07/home-hero.jpg);
       background-size: cover;
       display: flex;
       justify-content: center;

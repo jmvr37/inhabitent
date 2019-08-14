@@ -1044,8 +1044,6 @@ ul {
   padding-top: 0; }
   .home-page .site-content .hero-image {
     height: 100vh;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(//localhost:3000/inhabitent/wp-content/uploads/2019/07/home-hero.jpg);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(//localhost:3000/inhabitent/wp-content/uploads/2019/07/home-hero.jpg);
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1253,7 +1251,7 @@ ul {
   .post-template-default .site-content .content-area {
     width: 68%;
     padding-right: 5%;
-    border-right: 1px solid black; }
+    border-right: 1px solid #e1e1e1; }
     .post-template-default .site-content .content-area .site-main {
       margin-top: 40px; }
   .post-template-default .site-content .entry-meta {
@@ -1425,6 +1423,11 @@ ul {
         padding-top: 0;
         margin-left: 0;
         margin-right: 0; }
+        .archive.date .site-content .content-area .site-main .page-header .page-title {
+          letter-spacing: 2px;
+          font-size: 2.4rem;
+          text-transform: uppercase;
+          font-family: "Novecento Sans Web"; }
 
 .archive.date .entry-meta {
   position: absolute;
@@ -1626,20 +1629,25 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
-  padding-top: 90px;
+  padding-top: 50px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .archive.category .site-content .content-area {
-    width: 68%; }
-    .archive.category .site-content .content-area .site-main .page-header {
-      text-align: initial;
-      padding-top: 0;
-      margin-left: 0;
-      margin-right: 0;
-      border-bottom: 1px dashed; }
-      .archive.category .site-content .content-area .site-main .page-header .page-title {
-        font-family: "Novecento Sans Web";
-        font-size: 28px; }
+    width: 68%;
+    padding-right: 5%;
+    border-right: 1px solid #e1e1e1; }
+    .archive.category .site-content .content-area .site-main {
+      margin-top: 40px; }
+      .archive.category .site-content .content-area .site-main .page-header {
+        text-align: initial;
+        padding-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        border-bottom: 1px dashed; }
+        .archive.category .site-content .content-area .site-main .page-header .page-title {
+          font-family: "Novecento Sans Web";
+          font-size: 2.4rem;
+          letter-spacing: 2px; }
 
 .entry-header {
   position: relative; }
@@ -1851,54 +1859,58 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
-  padding-top: 90px;
+  padding-top: 50px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .error404 .site-content .content-area {
-    width: 68%; }
-    .error404 .site-content .content-area .site-main .page-title {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-family: 'Novecento Sans Web', sans-serif; }
-    .error404 .site-content .content-area .site-main .page-content .widgettitle {
-      font-size: 23px; }
-    .error404 .site-content .content-area .site-main .page-content .widget-title {
-      font-size: 23px; }
-    .error404 .site-content .content-area .site-main .page-content .widget.widget_archive {
-      margin-bottom: 80px; }
-    .error404 .site-content .content-area .site-main .page-content .search-form {
-      border: none; }
-      .error404 .site-content .content-area .site-main .page-content .search-form fieldset {
-        border: none;
-        padding: 0; }
-        .error404 .site-content .content-area .site-main .page-content .search-form fieldset label input ::-webkit-input-placeholder {
-          color: red; }
-        .error404 .site-content .content-area .site-main .page-content .search-form fieldset label input ::-ms-input-placeholder {
-          color: red; }
-        .error404 .site-content .content-area .site-main .page-content .search-form fieldset label input ::placeholder {
-          color: red; }
-        .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-field {
-          border: 1px solid #e1e1e1;
-          display: block;
-          background-color: #f4f4f4;
-          -webkit-box-shadow: none;
-                  box-shadow: none;
-          font-size: 1rem;
-          font-family: 'Novecento Sans Web', sans-serif;
-          padding-left: 10px;
-          padding-top: 0;
-          color: #666; }
-        .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-field:focus {
-          outline: none; }
-        .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-submit {
-          display: none;
+    width: 68%;
+    padding-right: 5%;
+    border-right: 1px solid #e1e1e1; }
+    .error404 .site-content .content-area .site-main {
+      margin-top: 40px; }
+      .error404 .site-content .content-area .site-main .page-title {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Novecento Sans Web', sans-serif; }
+      .error404 .site-content .content-area .site-main .page-content .widgettitle {
+        font-size: 23px; }
+      .error404 .site-content .content-area .site-main .page-content .widget-title {
+        font-size: 23px; }
+      .error404 .site-content .content-area .site-main .page-content .widget.widget_archive {
+        margin-bottom: 80px; }
+      .error404 .site-content .content-area .site-main .page-content .search-form {
+        border: none; }
+        .error404 .site-content .content-area .site-main .page-content .search-form fieldset {
           border: none;
-          background: transparent;
-          -webkit-box-shadow: none;
-                  box-shadow: none;
-          color: royalblue;
-          font-size: 0.9rem;
-          float: left;
-          padding: 5px 16px; }
-          .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-submit .icon-search .fa {
-            color: #248a83; }
+          padding: 0; }
+          .error404 .site-content .content-area .site-main .page-content .search-form fieldset label input ::-webkit-input-placeholder {
+            color: red; }
+          .error404 .site-content .content-area .site-main .page-content .search-form fieldset label input ::-ms-input-placeholder {
+            color: red; }
+          .error404 .site-content .content-area .site-main .page-content .search-form fieldset label input ::placeholder {
+            color: red; }
+          .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-field {
+            border: 1px solid #e1e1e1;
+            display: block;
+            background-color: #f4f4f4;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            font-size: 1rem;
+            font-family: 'Novecento Sans Web', sans-serif;
+            padding-left: 10px;
+            padding-top: 0;
+            color: #666; }
+          .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-field:focus {
+            outline: none; }
+          .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-submit {
+            display: none;
+            border: none;
+            background: transparent;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            color: royalblue;
+            font-size: 0.9rem;
+            float: left;
+            padding: 5px 16px; }
+            .error404 .site-content .content-area .site-main .page-content .search-form fieldset .search-submit .icon-search .fa {
+              color: #248a83; }
