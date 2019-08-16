@@ -554,17 +554,19 @@ a {
   text-align: right;
   width: 50%; }
 
-.logo {
-  position: fixed;
-  margin-left: 50px;
-  top: 38px; }
-  .logo a h1 {
-    background-image: url("/inhabitent/wp-content/themes/inhabitent-theme/images/logos/inhabitent-logo-tent.svg");
-    background-size: 50px 33px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    text-indent: 100%;
-    margin: 0; }
+.container {
+  position: relative; }
+  .container .logo {
+    position: absolute;
+    margin-left: 50px;
+    top: 14%; }
+    .container .logo a h1 {
+      background-image: url("/inhabitent/wp-content/themes/inhabitent-theme/images/logos/inhabitent-logo-tent.svg");
+      background-size: 50px 33px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      text-indent: 100%;
+      margin: 0; }
 
 .search-form {
   border: none; }
@@ -597,7 +599,8 @@ a {
       color: royalblue;
       font-size: 0.9rem;
       float: left;
-      padding: 5px 16px; }
+      padding: 5px 16px;
+      text-shadow: none; }
       .search-form fieldset .search-submit .icon-search .fa {
         color: #248a83; }
 
@@ -900,7 +903,8 @@ h3 {
 
 .page-id-49 .content-area {
   width: 80%;
-  border-right: 1px solid #e1e1e1; }
+  border-right: 1px solid #e1e1e1;
+  padding-bottom: 3rem; }
   .page-id-49 .content-area .site-main .find-title {
     font-size: 33px;
     text-transform: uppercase;
@@ -956,7 +960,8 @@ h3 {
     padding-right: 5%;
     border-right: 1px solid #e1e1e1; }
     .blog .site-content .content-area .site-main {
-      margin-top: 40px; }
+      margin-top: 40px;
+      margin-bottom: 70px; }
 
 .blog .entry-meta {
   position: absolute;
@@ -1251,9 +1256,11 @@ ul {
   .post-template-default .site-content .content-area {
     width: 68%;
     padding-right: 5%;
-    border-right: 1px solid #e1e1e1; }
+    border-right: 1px solid #e1e1e1;
+    margin-bottom: 0px; }
     .post-template-default .site-content .content-area .site-main {
-      margin-top: 40px; }
+      margin-top: 40px;
+      margin-bottom: 70px; }
   .post-template-default .site-content .entry-meta {
     position: absolute;
     color: white;
@@ -1266,8 +1273,8 @@ ul {
   .post-template-default .site-content .entry-content {
     margin: 0; }
     .post-template-default .site-content .entry-content p {
-      margin-left: 10px;
-      margin-right: 70px;
+      margin-left: 0px;
+      margin-right: 0px;
       text-align: initial; }
   .post-template-default .site-content .entry-header {
     position: relative; }
@@ -1334,31 +1341,39 @@ ul {
   letter-spacing: 2px;
   font-weight: normal; }
 
-.comment-form .comment-form-comment {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-family: "Novecento Sans Web"; }
-  .comment-form .comment-form-comment #comment {
-    margin: 0px;
-    width: 90%;
-    height: 251px;
-    border: 1px solid #e1e1e1;
-    background-color: #f4f4f4;
-    padding-left: 3px; }
-
-.comment-form .form-submit .submit {
-  border: 1px solid;
-  border-color: #248a83;
-  border-radius: 0px;
-  background: #248a83;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: white;
-  padding: 12px 33px;
-  text-shadow: none;
-  font-size: 14px; }
-  .comment-form .form-submit .submithover {
-    background-color: #22827b; }
+.comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .comment-form .comment-form-comment {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Novecento Sans Web"; }
+    .comment-form .comment-form-comment #comment {
+      margin: 0px;
+      width: 100%;
+      height: 251px;
+      border: 1px solid #e1e1e1;
+      background-color: #f4f4f4;
+      padding-left: 3px; }
+  .comment-form .form-submit {
+    width: 100%; }
+    .comment-form .form-submit .submit {
+      border: 1px solid;
+      border-color: #248a83;
+      border-radius: 0px;
+      background: #248a83;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: white;
+      padding: 12px 33px;
+      text-shadow: none;
+      font-size: 14px; }
+      .comment-form .form-submit .submithover {
+        background-color: #22827b; }
 
 .product-template-default .site-content {
   width: 1120px;
@@ -1824,8 +1839,8 @@ ul {
         border: none; }
 
 .widget-area {
-  padding-top: 50px;
-  padding-left: 5%;
+  padding-top: 40px;
+  padding-left: 4%;
   width: 27%; }
   .widget-area .widget.widget_archive .widget-title {
     font-size: 24px; }

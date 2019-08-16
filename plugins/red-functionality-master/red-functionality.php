@@ -1,10 +1,10 @@
 <?php
  /**
  *
- * @package   [SITE NAME] Functionality
- * @author    Your Name <your_email@email.com>
+ * @package   Inhabitent Functionality
+ * @author    Jose <jmvr37@hotmail.com>
  * @license   GPL-2.0+
- * @copyright 2015 Your Name or Company
+ * @copyright RED Academy
  *
  * @wordpress-plugin
  * Plugin Name: [SITE NAME] Functionality

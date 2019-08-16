@@ -133,18 +133,21 @@ a {
   }
 }
 
-.logo {
-  position: fixed;
-  margin-left: 50px;
-  top: 38px;
-  a {
-    h1 {
-      background-image: url('/inhabitent/wp-content/themes/inhabitent-theme/images/logos/inhabitent-logo-tent.svg');
-      background-size: 50px 33px;
-      background-repeat: no-repeat;
-      overflow: hidden;
-      text-indent: 100%;
-      margin: 0;
+.container {
+  position: relative;
+  .logo {
+    position: absolute;
+    margin-left: 50px;
+    top: 14%;
+    a {
+      h1 {
+        background-image: url('/inhabitent/wp-content/themes/inhabitent-theme/images/logos/inhabitent-logo-tent.svg');
+        background-size: 50px 33px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        text-indent: 100%;
+        margin: 0;
+      }
     }
   }
 }
@@ -184,6 +187,7 @@ a {
       font-size: 0.9rem;
       float: left;
       padding: 5px 16px;
+      text-shadow: none;
       .icon-search {
         .fa {
           color: $green-color;

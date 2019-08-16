@@ -11,9 +11,11 @@
       width: 68%;
       padding-right: 5%;
       border-right: 1px solid #e1e1e1;
+      margin-bottom: 0px;
 
       .site-main {
         margin-top: 40px;
+        margin-bottom: 70px;
       }
     }
     .entry-meta {
@@ -29,8 +31,8 @@
     .entry-content {
       margin: 0;
       p {
-        margin-left: 10px;
-        margin-right: 70px;
+        margin-left: 0px;
+        margin-right: 0px;
         text-align: initial;
       }
     }
@@ -121,13 +123,16 @@
 }
 
 .comment-form {
+  display: flex;
+  flex-wrap: wrap;
   .comment-form-comment {
+    width: 100%;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     font-family: $font_title;
     #comment {
       margin: 0px;
-      width: 90%;
+      width: 100%;
       height: 251px;
       border: 1px solid #e1e1e1;
       background-color: #f4f4f4;
@@ -135,6 +140,7 @@
     }
   }
   .form-submit {
+    width: 100%;
     .submit {
       border: 1px solid;
       border-color: #248a83;
