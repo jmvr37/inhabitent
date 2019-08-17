@@ -558,7 +558,7 @@ a {
   position: relative; }
   .container .logo {
     position: absolute;
-    margin-left: 50px;
+    margin-left: 155px;
     top: 14%; }
     .container .logo a h1 {
       background-image: url("/inhabitent/wp-content/themes/inhabitent-theme/images/logos/inhabitent-logo-tent.svg");
@@ -1340,6 +1340,62 @@ ul {
   font-size: 32px;
   letter-spacing: 2px;
   font-weight: normal; }
+
+.comments-area .comment-respond .comment-form .comment-form-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 10px; }
+  .comments-area .comment-respond .comment-form .comment-form-author #author {
+    background: #f4f4f4;
+    border-radius: 0;
+    height: 40px; }
+  .comments-area .comment-respond .comment-form .comment-form-author label {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: "Novecento Sans Web"; }
+
+.comments-area .comment-respond .comment-form .comment-form-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .comments-area .comment-respond .comment-form .comment-form-email #email {
+    background: #f4f4f4;
+    border-radius: 0;
+    height: 40px; }
+  .comments-area .comment-respond .comment-form .comment-form-email label {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: "Novecento Sans Web"; }
+
+.comments-area .comment-respond .comment-form .comment-form-url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .comments-area .comment-respond .comment-form .comment-form-url #url {
+    width: 205%;
+    background: #f4f4f4;
+    height: 40px;
+    border-radius: 0; }
+  .comments-area .comment-respond .comment-form .comment-form-url label {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: "Novecento Sans Web"; }
+
+.comments-area .comment-respond .comment-form .comment-form-cookies-consent {
+  display: none; }
 
 .comment-form {
   display: -webkit-box;

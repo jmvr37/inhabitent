@@ -33,7 +33,7 @@ ehthumbs.db
 
 plugins/*
 !plugins/red-functionality-master
-!plugins/bussines-hours-widget
+!plugins/business-hours-widget
 
 themes/*
 !themes/inhabitent-theme/

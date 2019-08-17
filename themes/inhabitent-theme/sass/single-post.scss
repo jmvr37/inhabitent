@@ -119,6 +119,55 @@
       letter-spacing: 2px;
       font-weight: normal;
     }
+    .comment-form {
+      .comment-form-author {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        #author {
+          background: #f4f4f4;
+          border-radius: 0;
+          height: 40px;
+        }
+        label {
+          text-transform: uppercase;
+          margin-bottom: 5px;
+          font-family: $font_title;
+        }
+      }
+      .comment-form-email {
+        display: flex;
+        flex-direction: column;
+        #email {
+          background: #f4f4f4;
+          border-radius: 0;
+          height: 40px;
+        }
+        label {
+          text-transform: uppercase;
+          margin-bottom: 5px;
+          font-family: $font_title;
+        }
+      }
+      .comment-form-url {
+        display: flex;
+        flex-direction: column;
+        #url {
+          width: 205%;
+          background: #f4f4f4;
+          height: 40px;
+          border-radius: 0;
+        }
+        label {
+          text-transform: uppercase;
+          margin-bottom: 5px;
+          font-family: $font_title;
+        }
+      }
+      .comment-form-cookies-consent {
+        display: none;
+      }
+    }
   }
 }
 
