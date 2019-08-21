@@ -1,6 +1,17 @@
-# RED Starter
+# Inabitent Site
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+## Description
+
+Inhabitent supply co. is a multipage website created on wordpress, using the blog function to display articles and the option to the user to log in and submit comments.
+
+##Technologies Used
+
+- Php
+- JavaScript
+- JQuery
+- CSS3 & SASS
+- HTML
+- Wordpress
 
 ## Installation
 
@@ -19,3 +30,7 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 ### 4. Update the proxy in `gulpfile.js`
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+
+# Browser Support
+
+### Chrome, Safari, Firefox, Mozilla & IE
